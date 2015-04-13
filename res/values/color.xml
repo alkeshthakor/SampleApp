@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="Material_Teal_500">#009688</color>
+     <color name="Material_Teal_700">#00796b</color>
+     <color name="Material_Teal_200">#80cbc4</color>
+     
+      <color name="color_indigo">#3F51B5</color>
+      <color name="color_blue">#2196F3</color>
+      <color name="color_brown">#795548</color>
+      <color name="color_blue_gray">#607D8B</color>
+      <color name="color_deep_pupal">#673AB7</color>
+      <color name="color_green_900">#2E7D32</color>
+      
+      <array name="drowarColoList">
+        <item>@color/color_indigo</item>
+        <item>@color/color_brown</item>
+        <item>@color/color_blue</item>
+        <item>@color/color_deep_pupal</item>
+        <item>@color/color_green_900</item>
+        <item>@color/color_blue_gray</item>
+      </array>
+      
+</resources>
