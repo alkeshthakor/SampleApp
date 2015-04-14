@@ -1,7 +1,5 @@
 package com.alkesh.sampleapp;
 
-import com.alkesh.sampleapp.adapter.SimpleListAdapter;
-
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -14,6 +12,8 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.alkesh.sampleapp.adapter.SimpleListAdapter;
 
 public class HomeActivity extends ActionBarActivity {
 	
@@ -33,8 +33,8 @@ public class HomeActivity extends ActionBarActivity {
 		
 		 toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
 		 if (toolbar != null) {
-	            toolbar.setTitle("SAMS");
 	            setSupportActionBar(toolbar);
+	           // TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);
 	      }
 	     
 	     leftDrawerList = (ListView) findViewById(android.R.id.list);

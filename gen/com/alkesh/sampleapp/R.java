@@ -1548,6 +1548,10 @@ containing a value of this type.
  Default text size for action bar title.
          */
         public static final int abc_text_size_title_material_toolbar=0x7f070012;
+        /**  Default screen margins, per the Android Design guidelines. 
+         */
+        public static final int activity_horizontal_margin=0x7f07002b;
+        public static final int activity_vertical_margin=0x7f07002c;
         /**  The platform's desired fixed height for a dialog along the major axis
          (the screen is in portrait). This may be either a fraction or a dimension.
  The platform's desired fixed height for a dialog along the major axis
@@ -1636,6 +1640,10 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020031;
         public static final int abc_textfield_search_material=0x7f020032;
         public static final int ic_launcher=0x7f020033;
+        public static final int ic_lock=0x7f020034;
+        public static final int ic_user=0x7f020035;
+        public static final int loginbuttonbackground=0x7f020036;
+        public static final int roundbackground=0x7f020037;
     }
     public static final class id {
         public static final int action_bar=0x7f090031;
@@ -1672,13 +1680,15 @@ containing a value of this type.
         public static final int icon=0x7f090026;
         public static final int ifRoom=0x7f090016;
         public static final int image=0x7f090023;
-        public static final int listConentTextView=0x7f090042;
+        public static final int listConentTextView=0x7f090045;
         public static final int listMode=0x7f09000a;
         public static final int list_item=0x7f090025;
+        public static final int loginButton=0x7f090044;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
         public static final int none=0x7f09000f;
         public static final int normal=0x7f09000b;
+        public static final int passwordEditText=0x7f090043;
         public static final int progress_circular=0x7f090007;
         public static final int progress_horizontal=0x7f090008;
         public static final int radio=0x7f09002b;
@@ -1703,6 +1713,7 @@ containing a value of this type.
         public static final int tool_bar=0x7f09003f;
         public static final int up=0x7f090001;
         public static final int useLogo=0x7f090013;
+        public static final int userNameEditText=0x7f090042;
         public static final int withText=0x7f090018;
         public static final int wrap_content=0x7f090009;
     }
@@ -1756,9 +1767,10 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_home=0x7f030017;
-        public static final int listview_item_layout=0x7f030018;
-        public static final int support_simple_spinner_dropdown_item=0x7f030019;
-        public static final int tool_bar=0x7f03001a;
+        public static final int activity_login=0x7f030018;
+        public static final int listview_item_layout=0x7f030019;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001a;
+        public static final int tool_bar=0x7f03001b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1817,10 +1829,27 @@ containing a value of this type.
         /**  Content description for the Toolbar icon used to collapse an expanded action mode. [CHAR LIMIT=NONE] 
          */
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
+        public static final int action_sign_in=0x7f0a001b;
+        public static final int action_sign_in_short=0x7f0a001c;
         public static final int app_name=0x7f0a0010;
         public static final int drawer_close=0x7f0a0013;
         public static final int drawer_open=0x7f0a0012;
+        public static final int error_field_required=0x7f0a0022;
+        public static final int error_incorrect_password=0x7f0a0021;
+        public static final int error_invalid_email=0x7f0a001f;
+        public static final int error_invalid_password=0x7f0a0020;
         public static final int hello_world=0x7f0a0011;
+        public static final int hint_password=0x7f0a0017;
+        public static final int hint_usre=0x7f0a0016;
+        public static final int lbl_login=0x7f0a0018;
+        public static final int plus_disconnect=0x7f0a001e;
+        public static final int plus_sign_out=0x7f0a001d;
+        /**  Strings related to login 
+         */
+        public static final int prompt_email=0x7f0a0019;
+        public static final int prompt_password=0x7f0a001a;
+        public static final int title_activity_login=0x7f0a0014;
+        public static final int welcomeback=0x7f0a0015;
     }
     public static final class style {
         /** 
