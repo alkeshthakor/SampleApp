@@ -20,6 +20,7 @@ public class LoginActivity extends ActionBarActivity implements OnClickListener{
         toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
 		 if (toolbar != null) {
 	            setSupportActionBar(toolbar);
+	            getSupportActionBar().setDisplayShowTitleEnabled(false);
 	      }
 		 loginButton=(Button)findViewById(R.id.loginButton);
 		 loginButton.setOnClickListener(this);

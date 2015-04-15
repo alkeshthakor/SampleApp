@@ -2,6 +2,9 @@ package com.alkesh.sampleapp;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -10,10 +13,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.FrameLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import com.alkesh.sampleapp.adapter.SimpleListAdapter;
+import com.alkesh.sampleapp.fragment.AdminFragment;
+import com.alkesh.sampleapp.fragment.BoothFragment;
+import com.alkesh.sampleapp.fragment.HomeFragment;
+import com.alkesh.sampleapp.fragment.SupplyChainFragment;
+import com.alkesh.sampleapp.fragment.UtilitiesFragment;
 
 public class HomeActivity extends ActionBarActivity {
 	
@@ -25,7 +34,6 @@ public class HomeActivity extends ActionBarActivity {
     private String[] leftSliderData = {"Home", "Booth", "Supply Chain", "Admin","Utilites","Log Out"};
     
 	private SimpleListAdapter myAdapter;
-	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -34,6 +42,7 @@ public class HomeActivity extends ActionBarActivity {
 		 toolbar = (Toolbar) findViewById(R.id.tool_bar); // Attaching the layout to the toolbar object
 		 if (toolbar != null) {
 	            setSupportActionBar(toolbar);
+	            getSupportActionBar().setDisplayShowTitleEnabled(false);
 	           // TextView mTitle = (TextView) toolbarTop.findViewById(R.id.toolbar_title);
 	      }
 	     
@@ -51,14 +60,14 @@ public class HomeActivity extends ActionBarActivity {
 	     leftDrawerList.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
-			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+			public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 					long arg3) {
-				// TODO Auto-generated method stub
-				Toast.makeText(getApplicationContext(),"You have selected option"+(arg2+1),Toast.LENGTH_SHORT).show();
+				loadFragment(position);
 				drawerLayout.closeDrawer(leftDrawerList);
 			}
 		});
 	     initDrawer();
+	     loadFragment(0);
 	}
 	
 	private void initDrawer() {
@@ -98,5 +107,50 @@ public class HomeActivity extends ActionBarActivity {
 		// TODO Auto-generated method stub
 		super.onConfigurationChanged(newConfig);
 		drawerToggle.syncState();
+	}
+	
+	private void loadFragment(int viewposition){
+		
+	  Fragment mFragment;
+      FragmentManager fragmentManager = getSupportFragmentManager();
+      FragmentTransaction transaction = fragmentManager.beginTransaction();
+		
+		switch(viewposition){
+		case 0:
+			mFragment=new HomeFragment();
+			transaction.replace(R.id.container, mFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+			break;
+		case 1:
+			mFragment=new BoothFragment();
+			transaction.replace(R.id.container, mFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+			break;
+		case 2:
+			mFragment=new SupplyChainFragment();
+			transaction.replace(R.id.container, mFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+			break;
+		case 3:
+			mFragment=new AdminFragment();
+			transaction.replace(R.id.container, mFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+
+			break;
+		case 4:
+			mFragment=new UtilitiesFragment();
+			transaction.replace(R.id.container, mFragment);
+            transaction.addToBackStack(null);
+            transaction.commit();
+			break;
+		case 5:
+			finish();
+			break;
+			
+		}
 	}
 }
