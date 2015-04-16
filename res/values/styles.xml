@@ -18,8 +18,9 @@
          which is used to tint widgets -->
     <item name="colorAccent">@color/Material_Teal_200</item>
     <item name="drawerArrowStyle">@style/MyDrawerArrowToggle</item>
-     <item name="android:textColorPrimary">@android:color/white</item>
+    <item name="android:textColorPrimary">@android:color/white</item>
      
+   
   </style>
   
    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
@@ -28,7 +29,20 @@
       
   </style>
   
-   
+  <style name="riasedbuttonthem">
+	    <item name="android:textColor">@android:color/white</item>
+	    <item name="android:padding">0dp</item>
+	    <item name="android:minWidth">88dp</item>
+	    <item name="android:minHeight">36dp</item>
+	    <item name="android:layout_margin">3dp</item>
+    </style>
+    
+  <style name="myButtonTheme" parent="riasedbuttonthem">  
+    <item name="android:background">@drawable/raised_button_background</item>
+ </style>
+ 
+      
+ 
     <!--   <item name="color">?android:attr/textColorSecondary</item>
     <item name="thickness">2dp</item>
     <item name="barSize">18dp</item>

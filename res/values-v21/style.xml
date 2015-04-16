@@ -6,16 +6,22 @@
         MyTheme from resources/values/styles.xml on API 21+ devices.
     -->
   <style name="MyTheme" parent="MyTheme.Base">
-    <item name="android:windowContentTransitions">true</item>
     <item name="android:windowAllowEnterTransitionOverlap">true</item>
     <item name="android:windowAllowReturnTransitionOverlap">true</item>
-    <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
-    <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+    <item name="android:windowContentTransitions">true</item>
+    <item name="android:windowSharedElementEnterTransition">@android:transition/slide_right</item>
+    <item name="android:windowSharedElementExitTransition">@android:transition/slide_left</item>
     <item name="android:navigationBarColor">@color/Material_Teal_500</item>
   
   </style>
   
- 
+  <style name="myButtonTheme" parent="riasedbuttonthem">
+    <item name="android:elevation">1dp</item>
+    <item name="android:translationZ">1dp</item>
+    <item name="android:background">@drawable/raised_button_background</item>
+ </style>
+
+
   
    <!--  <style name="AppTheme" parent="AppTheme.Base">
         <item name="colorPrimary">@color/Material_Teal_500</item>
