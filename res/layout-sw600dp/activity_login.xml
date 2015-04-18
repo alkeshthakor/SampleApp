@@ -20,8 +20,8 @@
            android:text="@string/welcomeback"/>
        <LinearLayout android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:layout_marginLeft="40dp"
-           android:layout_marginRight="40dp"
+           android:layout_marginLeft="50dp"
+           android:layout_marginRight="50dp"
            android:layout_marginTop="20dp"
            android:padding="20dp"
            android:gravity="center_horizontal"
@@ -43,20 +43,30 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:inputType="textPassword"
-           android:layout_marginTop="5dp"
-                      android:drawablePadding="5dp"
-           
+           android:layout_marginTop="10dp"
+           android:drawablePadding="5dp"
            android:drawableLeft="@drawable/ic_lock"
            android:drawableStart="@drawable/ic_lock"
            android:textColor="@android:color/black"
            android:hint="@string/hint_password"/>
                
+           <CheckBox
+            android:id="@+id/rememberMeCheckBox"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="start"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="@string/lbl_remember_me" />
+           
            <Button 
                android:id="@+id/loginButton"
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
+               android:layout_width="200dp"
+               android:layout_height="45dp"
                android:layout_marginTop="20dp"
                android:layout_marginBottom="5dp"
+               android:textSize="20sp"
                style="@style/myButtonTheme"
                android:text="@string/lbl_login"/>
          

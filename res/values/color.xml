@@ -2,7 +2,7 @@
 <resources>
      <color name="Material_Teal_500">#009688</color>
      <color name="Material_Teal_700">#00796b</color>
-     <color name="Material_Teal_200">#80cbc4</color>
+     <color name="Material_Teal_200">#64FFDA</color>
      
       <color name="color_indigo">#3F51B5</color>
       <color name="color_blue">#2196F3</color>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alkesh.sampleapp"
+    package="com.st.samudratech"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -8,15 +8,17 @@
         android:minSdkVersion="13"
         android:targetSdkVersion="22" />
 
-      <uses-permission android:name="android.permission.INTERNET" />
-      
+     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/app_name1"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".LoginActivity"
+            android:name="com.st.samudratech.LoginActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +27,7 @@
         </activity>
         
         <activity
-            android:name=".HomeActivity"
+            android:name="com.st.samudratech.HomeActivity"
             android:windowSoftInputMode="adjustResize|stateHidden" >
         </activity>
         

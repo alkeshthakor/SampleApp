@@ -2,6 +2,9 @@
 <resources>
 
     <string name="app_name">SAMS</string>
+    
+    <string name="app_name1">SAMS Pro</string>
+    
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
@@ -13,4 +16,22 @@
     
     <string name="lbl_login">Log In</string>
 
+	<string name="lbl_phone_no">Phone : </string>
+	<string name="lbl_mobile">Mobile : </string>
+	<string name="lbl_web">Web : </string>
+	<string name="lbl_email">E-Mail : </string>
+
+	<string name="value_phone_no">91-2742-259381</string>
+	<string name="value_mobile">91-9925044214</string>
+	<string name="value_web">www.samudratech.com</string>
+	<string name="value_email">info@samudratech.com</string>
+	
+    <string name="net_not_available">Internet connection not available !!!</string>
+    <string name="invalid_authentication">Invalid Username and Password !!!</string>
+    <string name="fail_communication">Communication with server Fail !!!</string>
+    <string name="lbl_remember_me">Remember Me</string>
+    
+    <string name="lbl_samudratech">Samudra Technology</string>
+    <string name="lbl_samudrainfo">Address :\n2nd Floor, "SAMUDRA",\nSuresh Mehta Chawk,\nAmbica Nagar Road,\nPalanpur. 385 001.\nBanaskantha. Gujarat. India.</string>
+    
 </resources>

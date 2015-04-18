@@ -1,4 +1,4 @@
-package com.alkesh.sampleapp;
+package com.st.samudratech;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
@@ -15,12 +15,13 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.alkesh.sampleapp.adapter.SimpleListAdapter;
-import com.alkesh.sampleapp.fragment.AdminFragment;
-import com.alkesh.sampleapp.fragment.BoothFragment;
-import com.alkesh.sampleapp.fragment.HomeFragment;
-import com.alkesh.sampleapp.fragment.SupplyChainFragment;
-import com.alkesh.sampleapp.fragment.UtilitiesFragment;
+import com.alkesh.sampleapp.R;
+import com.st.samudratech.adapter.SimpleListAdapter;
+import com.st.samudratech.fragment.AdminFragment;
+import com.st.samudratech.fragment.BoothFragment;
+import com.st.samudratech.fragment.HomeFragment;
+import com.st.samudratech.fragment.SupplyChainFragment;
+import com.st.samudratech.fragment.UtilitiesFragment;
 
 public class HomeActivity extends ActionBarActivity {
 	

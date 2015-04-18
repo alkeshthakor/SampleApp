@@ -1,4 +1,4 @@
-package com.alkesh.sampleapp.fragment;
+package com.st.samudratech.fragment;
 
 import com.alkesh.sampleapp.R;
 
@@ -16,8 +16,6 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
 		Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
 	  View view=inflater.inflate(R.layout.fragment_home_layout, container,false);
-      TextView homecontect=(TextView)view.findViewById(R.id.homeTextView);
-      homecontect.setText("Booth user interface under development");
       
       return view;
 	 

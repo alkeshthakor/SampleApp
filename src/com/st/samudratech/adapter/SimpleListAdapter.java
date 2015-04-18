@@ -1,4 +1,4 @@
-package com.alkesh.sampleapp.adapter;
+package com.st.samudratech.adapter;
 
 
 import com.alkesh.sampleapp.R;
