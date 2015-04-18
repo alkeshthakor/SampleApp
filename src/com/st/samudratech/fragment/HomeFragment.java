@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.alkesh.sampleapp.R;
+import com.st.samudratech.R;
 
 public class HomeFragment extends Fragment {
 	

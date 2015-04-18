@@ -1,7 +1,8 @@
 package com.st.samudratech.adapter;
 
 
-import com.alkesh.sampleapp.R;
+
+import com.st.samudratech.R;
 
 import android.content.Context;
 import android.view.LayoutInflater;

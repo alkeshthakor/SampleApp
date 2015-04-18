@@ -15,7 +15,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.alkesh.sampleapp.R;
 import com.st.samudratech.adapter.SimpleListAdapter;
 import com.st.samudratech.fragment.AdminFragment;
 import com.st.samudratech.fragment.BoothFragment;
