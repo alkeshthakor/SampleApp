@@ -13,6 +13,8 @@
     
     <string name="hint_usre">username</string>
     <string name="hint_password">password</string>
+    <string name="lbl_user_name">User Name:</string>
+    <string name="lbl_password">Password</string>
     
     <string name="lbl_login">Log In</string>
 
@@ -33,5 +35,15 @@
     
     <string name="lbl_samudratech">Samudra Technology</string>
     <string name="lbl_samudrainfo">Address :\n2nd Floor, "SAMUDRA",\nSuresh Mehta Chawk,\nAmbica Nagar Road,\nPalanpur. 385 001.\nBanaskantha. Gujarat. India.</string>
+    
+    <string name="lbl_order_place">Order Place</string>
+    <string name="lbl_previous_order">Previous Order</string>
+    <string name="lbl_online_payment">Online Payment</string>
+    <string name="lbl_account_statement">Account Statement</string>
+    
+    <string name="lbl_server_host_ip">Server Host IP</string>
+    <string name="lbl_server_instance">Server Instance</string>
+    <string name="lbl_server_configuration">Server Configuration</string>
+    <string name="lbl_save">Save</string>
     
 </resources>

@@ -24,12 +24,11 @@ import org.json.JSONObject;
 
 import android.util.Log;
 
+@SuppressWarnings("deprecation")
 public class ServerConnector {
 	String TAG="ServerConnector";
-	//String HOST_URL="http://octentechnologies.com/RouteManagement";
    
 	public JSONObject getServerResponse(String hostUrl){
-		//String host_url=HOST_URL+operationName;
 		try {
 			URL url=new URL(hostUrl);
 			HttpURLConnection conn=(HttpURLConnection)url.openConnection();

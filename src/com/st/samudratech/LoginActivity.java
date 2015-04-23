@@ -55,7 +55,7 @@ public class LoginActivity extends ActionBarActivity implements OnClickListener{
 		 loginButton=(Button)findViewById(R.id.loginButton);
 		 loginButton.setOnClickListener(this);
 		 
-		 mContext=this;
+		    mContext=this;
 			Constant.CONTEXT=this;
 			
 			cd=new ConnectionDetector(mContext);
@@ -122,12 +122,12 @@ public class LoginActivity extends ActionBarActivity implements OnClickListener{
 	
 private void processAuthentication(){
 	if(userIdEditText.getText().length()>0&&passwordEditText.getText().length()>0){
-		
+		rememberMe();
 		 if(cd.isConnectingToInternet()){
 				String userID=userIdEditText.getText().toString();
 				userID.trim();
 				String password=passwordEditText.getText().toString();
-				String urlString=Constant.HOST+Constant.LOGIN_SERVICE+"mobileno="+userID.trim()+"&password="+password.trim()+"&loginType=1";
+				String urlString=Constant.HOST_LOGIN+Constant.LOGIN_SERVICE+"mobileno="+userID.trim()+"&password="+password.trim()+"&loginType=1";
 				new UserLoginTask().execute(urlString);
 				
 			  }else{
@@ -147,52 +147,42 @@ class UserLoginTask extends AsyncTask<String,Void,JSONObject>{
     }
 	@Override
 	protected JSONObject doInBackground(String... param) {
-		//return connector.getServerResponse(param[0]);
+		return connector.getServerResponse(param[0]);
 		
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-		return null;
 	}
 	@Override
 	protected void onPostExecute(JSONObject result) {
 		super.onPostExecute(result);
 		mProgressDialog.dismiss();
-		Intent homeIntent=new Intent(getApplicationContext(),HomeActivity.class);
-		startActivity(homeIntent);	
 		
-//		if(result!=null){
-//			try {
-//				Log.d("Data",result.toString());
-//				if(result.has("action")&&result.getBoolean("status")==true){
-//					try {
-//						JSONObject values=result.getJSONObject("values");
-//						if(values!=null){
-//							int boothid=values.getInt("boothId");
-//							Pref.setValue(Constant.PREF_BOOTH_ID,""+boothid);
-//							Pref.setValue(Constant.PREF_BOOTH_NAME,values.getString("boothName"));
-//							Pref.setValue(Constant.PREF_BOOTH_BALANCE,values.getString("openingDepo"));
-//							
-//							Intent homeIntent=new Intent(getApplicationContext(),HomeActivity.class);
-//							startActivity(homeIntent);	
-//						}
-//					} catch (NumberFormatException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					} catch (JSONException e) {
-//						// TODO Auto-generated catch block
-//						e.printStackTrace();
-//					}
-//				}
-//			} catch (JSONException e) {
-//				// TODO Auto-generated catch block
-//				e.printStackTrace();
-//			}
-//		}
+		if(result!=null){
+			try {
+				Log.d("Data",result.toString());
+				if(result.has("action")&&result.getBoolean("status")==true){
+					try {
+						JSONObject values=result.getJSONObject("values");
+						if(values!=null){
+							int boothid=values.getInt("boothId");
+							Pref.setValue(Constant.PREF_BOOTH_ID,""+boothid);
+							Pref.setValue(Constant.PREF_BOOTH_NAME,values.getString("boothName"));
+							Pref.setValue(Constant.PREF_BOOTH_BALANCE,values.getString("openingDepo"));
+							
+							Intent homeIntent=new Intent(getApplicationContext(),HomeActivity.class);
+							startActivity(homeIntent);	
+						}
+					} catch (NumberFormatException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (JSONException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+				}
+			} catch (JSONException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 }
 

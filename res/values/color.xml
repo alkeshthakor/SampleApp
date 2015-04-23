@@ -11,6 +11,10 @@
       <color name="color_deep_pupal">#673AB7</color>
       <color name="color_green_900">#2E7D32</color>
       
+      <color name="color_cayan_700">#0097A7</color>
+      <color name="color_purpal_700">#512DA8</color>
+     
+      
       <array name="drowarColoList">
         <item>@color/color_indigo</item>
         <item>@color/color_brown</item>

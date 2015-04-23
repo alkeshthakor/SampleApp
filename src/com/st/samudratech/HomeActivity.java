@@ -1,5 +1,8 @@
 package com.st.samudratech;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -32,6 +35,13 @@ public class HomeActivity extends ActionBarActivity {
     private String[] leftSliderData = {"Home", "Booth", "Supply Chain", "Admin","Utilites","Log Out"};
     
 	private SimpleListAdapter myAdapter;
+	
+	@Override
+	public void onBackPressed() {
+		// TODO Auto-generated method stub
+		//super.onBackPressed();
+		confirmLogOut();
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -117,38 +127,62 @@ public class HomeActivity extends ActionBarActivity {
 		case 0:
 			mFragment=new HomeFragment();
 			transaction.replace(R.id.container, mFragment);
-            transaction.addToBackStack(null);
+           // transaction.addToBackStack(null);
             transaction.commit();
 			break;
 		case 1:
 			mFragment=new BoothFragment();
 			transaction.replace(R.id.container, mFragment);
-            transaction.addToBackStack(null);
+           // transaction.addToBackStack(null);
             transaction.commit();
 			break;
 		case 2:
 			mFragment=new SupplyChainFragment();
 			transaction.replace(R.id.container, mFragment);
-            transaction.addToBackStack(null);
+         //   transaction.addToBackStack(null);
             transaction.commit();
 			break;
 		case 3:
 			mFragment=new AdminFragment();
 			transaction.replace(R.id.container, mFragment);
-            transaction.addToBackStack(null);
+          //  transaction.addToBackStack(null);
             transaction.commit();
 
 			break;
 		case 4:
 			mFragment=new UtilitiesFragment();
 			transaction.replace(R.id.container, mFragment);
-            transaction.addToBackStack(null);
+          //  transaction.addToBackStack(null);
             transaction.commit();
 			break;
 		case 5:
-			finish();
+			confirmLogOut();
 			break;
 			
 		}
+	}
+	
+	public void confirmLogOut(){
+		AlertDialog.Builder builder = new AlertDialog.Builder(HomeActivity.this);
+		builder.setTitle("Confirm sign out");
+		builder.setMessage("Are you sure, do you want sign out?");
+		builder.setPositiveButton("Yes",
+				new OnClickListener() {
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						finish();
+					}
+				});
+		builder.setNegativeButton("No",new OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				
+			}
+		});
+			
+		 AlertDialog alert = builder.create();;
+		 alert.show();
+		 
 	}
 }

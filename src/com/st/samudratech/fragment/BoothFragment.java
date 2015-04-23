@@ -14,7 +14,7 @@ public class BoothFragment extends Fragment {
 public View onCreateView(LayoutInflater inflater, ViewGroup container,
 		Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
-	  View view=inflater.inflate(R.layout.fragment_home_layout, container,false);
+	  View view=inflater.inflate(R.layout.fragment_booth_layout, container,false);
       
       return view;
 	 
