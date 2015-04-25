@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/product_item_background"
+    tools:context=".ProductListActivity" >
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:id="@+id/productNameTextView"
+	        android:textSize="16sp"
+	        android:textStyle="bold"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:paddingLeft="5dp"
+	        android:paddingStart="5dp"
+	        android:paddingRight="5dp"
+	        android:gravity="start"/>
+         
+          <TextView 
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_qty"
+        	        android:textSize="16sp"
+        	        android:textStyle="bold"
+        
+        android:textColor="@android:color/white"/>
+         <EditText
+	        android:id="@+id/quantityEditText"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:textSize="16sp"
+	        android:hint="@string/lbl_hint_enter_quantity"
+	        android:gravity="center"/>
+        
+</LinearLayout>

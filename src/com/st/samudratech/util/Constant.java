@@ -40,5 +40,11 @@ public class Constant {
 	public static String PREF_PASSWORD = "pref_password";
 
 	
+	public static String PREF_USER_ID_SERVER = "pref_userid_server";
+	public static String PREF_PASSWORD_SERVER = "pref_password_server";
+	public static String PREF_SERVER_IP = "pref_server_ip";
+	public static String PREF_SERVER_INSTANCE = "pref_server_password";
+
+	
 
 }

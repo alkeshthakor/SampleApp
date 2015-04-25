@@ -2,48 +2,120 @@
 <resources>
 
     <string name="app_name">SAMS</string>
-    
     <string name="app_name1">SAMS Pro</string>
-    
     <string name="hello_world">Hello world!</string>
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
-    
     <string name="welcomeback">Welcome Back</string>
-    
     <string name="hint_usre">username</string>
     <string name="hint_password">password</string>
     <string name="lbl_user_name">User Name:</string>
     <string name="lbl_password">Password</string>
-    
     <string name="lbl_login">Log In</string>
-
-	<string name="lbl_phone_no">Phone : </string>
-	<string name="lbl_mobile">Mobile : </string>
-	<string name="lbl_web">Web : </string>
-	<string name="lbl_email">E-Mail : </string>
-
-	<string name="value_phone_no">91-2742-259381</string>
-	<string name="value_mobile">91-9925044214</string>
-	<string name="value_web">www.samudratech.com</string>
-	<string name="value_email">info@samudratech.com</string>
-	
+    <string name="lbl_phone_no">Phone : </string>
+    <string name="lbl_mobile">Mobile : </string>
+    <string name="lbl_web">Web : </string>
+    <string name="lbl_email">E-Mail : </string>
+    <string name="value_phone_no">91-2742-259381</string>
+    <string name="value_mobile">91-9925044214</string>
+    <string name="value_web">www.samudratech.com</string>
+    <string name="value_email">info@samudratech.com</string>
     <string name="net_not_available">Internet connection not available !!!</string>
     <string name="invalid_authentication">Invalid Username and Password !!!</string>
     <string name="fail_communication">Communication with server Fail !!!</string>
     <string name="lbl_remember_me">Remember Me</string>
-    
     <string name="lbl_samudratech">Samudra Technology</string>
     <string name="lbl_samudrainfo">Address :\n2nd Floor, "SAMUDRA",\nSuresh Mehta Chawk,\nAmbica Nagar Road,\nPalanpur. 385 001.\nBanaskantha. Gujarat. India.</string>
-    
     <string name="lbl_order_place">Order Place</string>
     <string name="lbl_previous_order">Previous Order</string>
     <string name="lbl_online_payment">Online Payment</string>
     <string name="lbl_account_statement">Account Statement</string>
-    
     <string name="lbl_server_host_ip">Server Host IP</string>
     <string name="lbl_server_instance">Server Instance</string>
     <string name="lbl_server_configuration">Server Configuration</string>
     <string name="lbl_save">Save</string>
-    
+    <string name="title_activity_order_place">OrderPlaceActivity</string>
+    <string name="lbl_shift_morning">Morning</string>
+    <string name="lbl_shift_night">Evening</string>
+    <string name="lbl_hint_enter_quantity">enter quantity</string>
+    <string name="lbl_booth_delivery">Booth Delivery</string>
+    <string name="lbl_route_summary">Route Summary</string>
+    <string name="lbl_stock_summary">Stock Summary</string>
+    <string name="lbl_product_id">Product Id:</string>
+    <string name="lbl_quantity">Quantity:</string>
+    <string name="lbl_booth_detail">Booth Deatil</string>
+    <string name="lbl_booth_id">Id:</string>
+    <string name="lbl_booth_area">Area: </string>
+    <string name="lbl_balance">Balance: </string>
+    <string name="lbl_last_order">L_Order: </string>
+    <string name="lbl_order_shift">O_Shift:</string>
+    <string name="lbl_current_order">C_Order: </string>
+    <string name="lbl_prodcut_detail">Product Detail</string>
+    <string name="lbl_product_code">Product Code: </string>
+    <string name="lbl_product_name">Name: </string>
+    <string name="lbl_product_rate">Product Rate:</string>
+    <string name="lbl_qty">Qty:</string>
+    <string name="lbl_total">Total:</string>
+    <string name="inform_mobile">Please enter mobile number</string>
+    <string name="inform_password">Please enter Pasword</string>
+    <string name="lbl_submit_order">Submit</string>
+    <string name="lbl_send_sms">SMS</string>
+    <string name="lbl_calcel">Back</string>
+    <string name="lbl_exit">Exit</string>
+    <string name="lbl_send">Send</string>
+    <string name="lbl_mobile_no">Mobile Number:</string>
+    <string name="lbl_order_detail">Order Detail:</string>
+
+    <string-array name="admin_menu_array">
+        <item>Master</item>
+        <item>Daily Activities</item>
+        <item>User management</item>
+        <item>Dbf generation</item>
+        <item>Reports</item>
+        <item>Additional sales</item>
+        <item>Receipts</item>
+        <item>Maintenance</item>
+        <item>Deposit DR CR</item>
+    </string-array>
+    <string-array name="master_menu_sub_array">
+        <item>Item master</item>
+        <item>Rate Master</item>
+        <item>Route Master</item>
+        <item>Booth Master</item>
+    </string-array>
+    <string-array name="shift_report_menu_array">
+        <item>Gate Pass</item>
+        <item>Route Truck Sheet</item>
+        <item>Truck Summary</item>
+    </string-array>
+    <string-array name="report_menu_array">
+        <item>FinalTruck Sheet</item>
+        <item>Product wise Report</item>
+        <item>Ledger</item>
+        <item>Route Truck Sheet</item>
+        <item>Truck Summary</item>
+        <item>Out Standing</item>
+        <item>Collection Report</item>
+        <item>Commission Statement</item>
+        <item>Ledger – All Both</item>
+        <item>Monthly Summary</item>
+        <item>City wise monthly report</item>
+        <item>Crate overload report</item>
+        <item>MIS Report on milk and buttermilk marketing</item>
+        <item>City wise dispatch</item>
+        <item>Yearly reports</item>
+        <item>Monthly summary - full</item>
+    </string-array>
+    <string-array name="daily_menu_array">
+        <item>New Day</item>
+        <item>Morning Entry</item>
+        <item>Morning Report</item>
+        <item>Evening Entry</item>
+        <item>Evening Report</item>
+        <item>Daily Report</item>
+        <item>End of Day</item>
+    </string-array>
+
+    <string name="title_activity_admin">AdminActivity</string>
+
 </resources>

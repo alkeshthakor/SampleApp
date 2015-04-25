@@ -8,13 +8,13 @@ import android.view.ViewGroup;
 
 import com.st.samudratech.R;
 
-public class SupplyChainFragment extends Fragment {
+public class SupplyChainFragment extends Fragment  {
 	
   @Override
 public View onCreateView(LayoutInflater inflater, ViewGroup container,
 		Bundle savedInstanceState) {
 	// TODO Auto-generated method stub
-	  View view=inflater.inflate(R.layout.fragment_home_layout, container,false);
+	  View view=inflater.inflate(R.layout.fragment_supplychain_layout, container,false);
       
       
       return view;
