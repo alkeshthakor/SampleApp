@@ -13,6 +13,8 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.PorterDuff.Mode;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -21,6 +23,7 @@ import android.telephony.SmsManager;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -86,15 +89,23 @@ public class OrderPlaceActivity extends ActionBarActivity implements
 		setContentView(R.layout.activity_order_place);
 
 		toolbar = (Toolbar) findViewById(R.id.tool_bar);
+		
 		if (toolbar != null) {
 			setSupportActionBar(toolbar);
+			 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		     getSupportActionBar().setHomeButtonEnabled(true);
 			getSupportActionBar().setDisplayShowTitleEnabled(false);
 			TextView mTitle = (TextView) toolbar
 					.findViewById(R.id.toolbar_title);
 			mTitle.setText(R.string.lbl_order_place);
-
+			
+			final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
+			upArrow.setColorFilter(getResources().getColor(android.R.color.white),Mode.SRC_ATOP);
+			getSupportActionBar().setHomeAsUpIndicator(upArrow);
+			
 		}
 
+		
 		productListView = (LinearLayout) findViewById(R.id.productListView);
 
 		mIdTextView = (TextView) findViewById(R.id.boothIdTextView);
@@ -505,5 +516,19 @@ public class OrderPlaceActivity extends ActionBarActivity implements
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		switch (item.getItemId()) {
+	    case android.R.id.home:
+	        finish();
+	        break;
+
+	    default:
+	        break;
+	    }
+	    return super.onOptionsItemSelected(item);
 	}
 }

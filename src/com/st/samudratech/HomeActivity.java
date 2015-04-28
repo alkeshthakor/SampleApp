@@ -18,7 +18,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.st.samudratech.adapter.SimpleListAdapter;
 import com.st.samudratech.fragment.AdminFragment;
 import com.st.samudratech.fragment.BoothFragment;
 import com.st.samudratech.fragment.HomeFragment;
@@ -34,7 +33,7 @@ public class HomeActivity extends ActionBarActivity {
     private ArrayAdapter<String> navigationDrawerAdapter;
     private String[] leftSliderData = {"Home", "Booth", "Supply Chain", "Admin","Utilites","Log Out"};
     
-	private SimpleListAdapter myAdapter;
+	//private SimpleListAdapter myAdapter;
 	
 	@Override
 	public void onBackPressed() {

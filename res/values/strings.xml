@@ -117,5 +117,9 @@
     </string-array>
 
     <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_admin_master">AdminMaster</string>
+    <string name="title_activity_daily">DailyActivity</string>
+    <string name="title_activity_daily_shift_report">DailyShiftReportActivity</string>
+    <string name="title_activity_admin_report">AdminReportActivity</string>
 
 </resources>
