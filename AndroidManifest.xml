@@ -28,7 +28,8 @@
         </activity>
         <activity
             android:name=".HomeActivity"
-            android:windowSoftInputMode="adjustResize|stateHidden" >
+            android:windowSoftInputMode="adjustResize|stateHidden" 
+            android:screenOrientation="portrait">
         </activity>
 
         <!--
@@ -40,26 +41,32 @@
         -->
         <activity
             android:name=".OrderPlaceActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_order_place" >
         </activity>
         <activity
             android:name=".AdminActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_admin" >
         </activity>
         <activity
             android:name=".AdminMasterActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_admin_master" >
         </activity>
         <activity
             android:name=".DailyActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_daily" >
         </activity>
         <activity
             android:name=".DailyShiftReportActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_daily_shift_report" >
         </activity>
         <activity
             android:name=".AdminReportActivity"
+            android:screenOrientation="portrait"
             android:label="@string/title_activity_admin_report" >
         </activity>
     </application>

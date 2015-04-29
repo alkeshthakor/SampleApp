@@ -1,0 +1,45 @@
+<html>
+  <head>
+  	<meta name="viewport" content="width=device-width" />
+    <title>
+    </title>
+  	<script type="text/javascript" src="FusionCharts.js"></script>
+  	
+  	<script type="text/javascript">
+     	
+     	function generateXML(mDataSet){			
+				
+			var strXML="";
+		
+			strXML = "<chart decimalPrecision='2'>";
+			strXML = strXML + "divlinedecimalPrecision='0' animation='1'  showValues='1' rotateValues='1'";
+			strXML = strXML + "useRoundEdges='1' showBorder='0'  formatNumberScale='0' bgColor='' bgAlpha='100,100'";
+			strXML = strXML + "showAlternateHGridColor='1' AlternateHGridAlpha='30' AlternateHGridColor='E4E7D9' divLineColor='E4E7D9' divLineAlpha='80'";
+			strXML = strXML + "canvasBaseColor='FFFFFF' outCnvbasefontsize='12' canvasBgColor='FFFFFF' >";
+			
+			strXML = strXML +  mDataSet;
+			
+			strXML = strXML + "</chart>";
+
+			return strXML;
+		}
+		
+     </script>
+  	
+  </head>
+ 
+  <body style="width:100% hight:100%">
+	<div id="chartContainer">
+	   <script type="text/javascript">
+			function LoadCharts() {
+				var mWidth = Android.getWidth();
+				var mHight = Android.getHight();   
+				var myChart = new FusionCharts("MSColumn3D.swf","myChartId", mWidth, mHight, "0", "1"); 
+				myChart.setDataXML(generateXML(Android.XMLDataWeight()));
+				myChart.render("chartContainer");
+	      
+			}
+		</script>
+	</div>
+  </body>
+</html>

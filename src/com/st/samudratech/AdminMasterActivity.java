@@ -68,7 +68,7 @@ public class AdminMasterActivity extends ActionBarActivity{
 
             @Override
             public void onItemClick(View v , int position) {
-                Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(),"Item clicked",Toast.LENGTH_SHORT).show();
             }
         });
 		

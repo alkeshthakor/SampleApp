@@ -16,6 +16,8 @@ public class Constant {
 
 	//http://117.239.35.171:8080/gdairy/user/login?mobileno=9909431965&password=DP1&loginType=1
 		
+	public final static String URL_HEALTH_WEIGHT = "file:///android_asset/health_weight.html";
+	
 	public static final String LOGIN_SERVICE="/gdairy/user/login?";
 	public static final String PRODUCT_SERVICE="/gdairy/Product/getProduct?";
 	public static final String SUBMIT_ORDER_SERVICE="/gdairy/Order/order/";
