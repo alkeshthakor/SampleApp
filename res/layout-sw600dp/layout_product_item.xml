@@ -2,40 +2,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp"
-    android:orientation="horizontal"
-    android:gravity="center_vertical"
     android:background="@drawable/product_item_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp"
     tools:context=".ProductListActivity" >
-         <TextView 
-	        style="@style/style_TextView_white"
-	        android:id="@+id/productNameTextView"
-	        android:textSize="16sp"
-	        android:textStyle="bold"
-	        android:layout_width="0dp"
-	        android:layout_weight="1"
-	        android:singleLine="true"
-	        android:ellipsize="end"
-	        android:paddingLeft="5dp"
-	        android:paddingStart="5dp"
-	        android:paddingRight="5dp"
-	        android:gravity="start"/>
-         
-          <TextView 
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        style="@style/style_TextView_white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
         style="@style/style_TextView_black_bold"
         android:text="@string/lbl_qty"
-        	        android:textSize="16sp"
-        	        android:textStyle="bold"
-        
-        android:textColor="@android:color/white"/>
-         <EditText
-	        android:id="@+id/quantityEditText"
-	        android:layout_width="120dp"
-	        android:layout_height="wrap_content"
-	        android:inputType="number"
-	        android:maxLength="5"
-	        android:textSize="16sp"
-	        android:hint="@string/lbl_hint_enter_quantity"
-	        android:gravity="center"/>
-        
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/product_edittext_background"
+        android:gravity="center"
+        android:hint="@string/lbl_hint_enter_quantity"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
 </LinearLayout>

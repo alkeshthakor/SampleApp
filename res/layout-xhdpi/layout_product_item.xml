@@ -32,11 +32,12 @@
     <EditText
         android:id="@+id/quantityEditText"
         android:layout_width="90dp"
-        android:layout_height="wrap_content"
+        android:layout_height="30dp"
+        android:background="@drawable/product_edittext_background"
         android:gravity="center"
-        android:hint="@string/lbl_hint_enter_quantity"
         android:inputType="number"
         android:maxLength="5"
+        android:textColor="@android:color/black"
         android:textSize="14sp" />
 
 </LinearLayout>

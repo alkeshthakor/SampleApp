@@ -32,6 +32,7 @@ public class HomeActivity extends ActionBarActivity {
     private ListView leftDrawerList;
     private ArrayAdapter<String> navigationDrawerAdapter;
     private String[] leftSliderData = {"Home", "Booth", "Supply Chain", "Admin","Utilites","Log Out"};
+    Fragment mFragment;
     
 	//private SimpleListAdapter myAdapter;
 	
@@ -77,6 +78,12 @@ public class HomeActivity extends ActionBarActivity {
 	     loadFragment(0);
 	}
 	
+	@Override
+	protected void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+	}
+	
 	private void initDrawer() {
 
         drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close) {
@@ -118,7 +125,7 @@ public class HomeActivity extends ActionBarActivity {
 	
 	private void loadFragment(int viewposition){
 		
-	  Fragment mFragment;
+	 
       FragmentManager fragmentManager = getSupportFragmentManager();
       FragmentTransaction transaction = fragmentManager.beginTransaction();
 		
