@@ -65,6 +65,13 @@
     <string name="lbl_send">Send</string>
     <string name="lbl_mobile_no">Mobile Number:</string>
     <string name="lbl_order_detail">Order Detail:</string>
+    
+    <string-array name="chart_report_selection">
+        <item>Day Wise Report</item>
+        <item>Monthly Report</item>
+    </string-array>
+    
+    
 
     <string-array name="admin_menu_array">
         <item>Master</item>
