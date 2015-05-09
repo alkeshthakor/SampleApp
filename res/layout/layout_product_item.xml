@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/product_item_background"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    tools:context=".ProductListActivity" >
+
+    <TextView
+        android:id="@+id/productNameTextView"
+        style="@style/style_TextView_white"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="start"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingStart="5dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_qty"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/quantityEditText"
+        android:layout_width="90dp"
+        android:layout_height="30dp"
+        android:background="@drawable/product_edittext_background"
+        android:gravity="center"
+        android:inputType="number"
+        android:maxLength="5"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -24,7 +24,7 @@
     <string name="invalid_authentication">Invalid Username and Password !!!</string>
     <string name="fail_communication">Communication with server Fail !!!</string>
     <string name="lbl_remember_me">Remember Me</string>
-    <string name="lbl_samudratech">Samudra Technology</string>
+    <string name="lbl_samudratech">Samudra Technologies</string>
     <string name="lbl_samudrainfo">Address :\n2nd Floor, "SAMUDRA",\nSuresh Mehta Chawk,\nAmbica Nagar Road,\nPalanpur. 385 001.\nBanaskantha. Gujarat. India.</string>
     <string name="lbl_order_place">Order Place</string>
     <string name="lbl_previous_order">Previous Order</string>
@@ -65,6 +65,8 @@
     <string name="lbl_send">Send</string>
     <string name="lbl_mobile_no">Mobile Number:</string>
     <string name="lbl_order_detail">Order Detail:</string>
+    
+    <string name="lbl_select_chart">Select Chart:</string>
     
     <string-array name="chart_report_selection">
         <item>Day Wise Report</item>

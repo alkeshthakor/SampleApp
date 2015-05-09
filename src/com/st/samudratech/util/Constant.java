@@ -1,5 +1,6 @@
 package com.st.samudratech.util;
 
+import android.R.bool;
 import android.content.Context;
 
 public class Constant {
@@ -9,14 +10,13 @@ public class Constant {
 		
 	public static Context CONTEXT;
 	
-	//public static final String HOST="http://octentechnologies.com/RouteManagement";
 	
 	public static String HOST="http://117.239.35.172:8080";
 	public static String HOST_LOGIN="http://117.239.35.172:8080";
 
 	//http://117.239.35.171:8080/gdairy/user/login?mobileno=9909431965&password=DP1&loginType=1
 		
-	public final static String URL_HEALTH_WEIGHT = "file:///android_asset/health_weight.html";
+	public final static String MILK_COLLECTION_CHART = "file:///android_asset/milk_collection_report_stack_chart.html";
 	
 	public static final String LOGIN_SERVICE="/gdairy/user/login?";
 	public static final String PRODUCT_SERVICE="/gdairy/Product/getProduct?";
@@ -26,9 +26,8 @@ public class Constant {
 	public static final String DOC_REPORT_SERVICE="/RMRD/Report/DocReport?";
 	public static final String LAB_REPORT_SERVICE="/RMRD/Report/LabReport?";
 	
-	
-	//http://117.239.35.171:8080/gdairy/Order/viewReport?boothId=7&date=02-07-2015&shift=0
-	//http://117.239.35.171:8080/gdairy/Order/viewListReport?boothId=7
+	public static final String MONTH_WISE_CHART_SERVICE="/RMRD/reports/getMonthWiseMilkData?centerId=";
+	public static final String DATE_WISE_CHART_SERVICE="/RMRD/reports/getDateWiseMilkData?centerId=";
 	
 	public static final String REPORT_LIST_SERVICE="/gdairy/Order/viewListReport?boothId=";
 	public static final String REPORT_DETAIL_SERVICE="/gdairy/Order/viewReport?";
@@ -48,5 +47,11 @@ public class Constant {
 	public static String PREF_SERVER_INSTANCE = "pref_server_password";
 
 	
+	public static int DEVICE_SCREEN_WIDTH =0;
+	
+	public static int MOBILE_DEVICE_SCREEN = 480;
+	public static int SAVEN_INCH_DEVICE_SCREEN =600;
+	public static int TEN_INCH_DEVICE_SCREEN =800;
 
+	public static String[] MONTHS_INDEXED = new String[] {"JAN", "FEB","MAR","APR","MAY","JUN","JUL","AUG","SEP","OCT","NOV","DEC"};
 }

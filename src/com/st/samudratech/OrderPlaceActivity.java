@@ -91,13 +91,13 @@ public class OrderPlaceActivity extends ActionBarActivity implements
 		toolbar = (Toolbar) findViewById(R.id.tool_bar);
 		
 		if (toolbar != null) {
-			setSupportActionBar(toolbar);
+			 setSupportActionBar(toolbar);
 			 getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 		     getSupportActionBar().setHomeButtonEnabled(true);
-			getSupportActionBar().setDisplayShowTitleEnabled(false);
-			TextView mTitle = (TextView) toolbar
+			 getSupportActionBar().setDisplayShowTitleEnabled(false);
+			 TextView mTitle = (TextView) toolbar
 					.findViewById(R.id.toolbar_title);
-			mTitle.setText(R.string.lbl_order_place);
+			 mTitle.setText(R.string.lbl_order_place);
 			
 			final Drawable upArrow = getResources().getDrawable(R.drawable.abc_ic_ab_back_mtrl_am_alpha);
 			upArrow.setColorFilter(getResources().getColor(android.R.color.white),Mode.SRC_ATOP);
